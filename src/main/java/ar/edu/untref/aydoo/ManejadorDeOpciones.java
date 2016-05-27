@@ -28,7 +28,10 @@ public class ManejadorDeOpciones {
 					break;
 				default:
 					this.archivoEntrada = args[i];
-					validarNombreArchivo(args[i].substring(9, args[i].length()));
+					String tem =  args[i].substring(0, args[i].length());
+					System.out.println(tem);
+					
+					validarNombreArchivo(tem);
 					break;
 				}
 			}

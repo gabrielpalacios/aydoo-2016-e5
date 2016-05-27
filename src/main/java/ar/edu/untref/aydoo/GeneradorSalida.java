@@ -3,6 +3,7 @@ package ar.edu.untref.aydoo;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
 
@@ -42,7 +43,11 @@ public class GeneradorSalida {
 		String pathJar = obtenerPathJar();
 		File plantilla = new File(pathJar + "/plantilla");
 		File carpetaSalida = new File(pathJar + "/" + this.nombreCarpetaSalida);		
-		FileUtils.copyDirectory(plantilla, carpetaSalida);
+		
+		//comentada
+		//FileUtils.copyDirectory(plantilla, carpetaSalida);
+	
+		DirUtils.copy(plantilla.toPath(), carpetaSalida.toPath());
 	}
 
 	public void sobreEscribirLineaEnIndex(List<ItemEntrada> itemsEntrada, Formateador formateador) throws IOException {

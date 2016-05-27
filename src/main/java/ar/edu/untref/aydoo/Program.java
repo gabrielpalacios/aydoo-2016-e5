@@ -13,7 +13,7 @@ public class Program {
 	private static String carpetaSalida;
 
 	public static final void main(String args[]) throws Exception {
-		
+		//args = new String[] {"--mode=no-output", "ab.md"};
 		getParametrosAplicacion(args);
 		Formateador formateadorHTML = new FormateadorHTML();
 		GeneradorItemsDesdeArchivo generadorItemsDesdeArchivo = new GeneradorItemsDesdeArchivo(archivoEntrada);
