@@ -20,6 +20,9 @@ hs_err_pid*
 .classpath
 .project
 
-# archivos txt
+# archivos de texto
 *.txt
 *.txt~
+*.md~
+/bin
+*.bak

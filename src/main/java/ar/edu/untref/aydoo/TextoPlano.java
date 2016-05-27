@@ -1,13 +1,14 @@
 package ar.edu.untref.aydoo;
 
-public class Titulo extends ItemEntrada {
+public class TextoPlano extends ItemEntrada {
 
-	public Titulo(String contenido) {
+
+	public TextoPlano(String contenido) {
 		super(contenido, false, false);
 	}
 
 	public String getTextoFormateado(Formateador formateador) {
-		return formateador.getTituloFormateado(this.getTexto());
+		return formateador.getTextoPlanoFormateado(this.getTexto());
 	}
 
 	@Override

@@ -4,18 +4,16 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class IntegracionTest {
-	
+
 	@Test
 	public void test() {
-		
-		
-		//A
-		
-		//A
-		
+
+		// A
+
+		// A
+
 		Assert.assertTrue(true);
-		
+
 	}
 
-	
 }
