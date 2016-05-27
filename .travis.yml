@@ -2,5 +2,9 @@ language: java
 jdk:
   - oraclejdk8
 script: 
+<<<<<<< HEAD
 - cd aydoo-2016-e5
 - mvn clean test
+=======
+- mvn clean test
+>>>>>>> b7a13e42da0417ce51a15f29b3f4f73dc76353c6
